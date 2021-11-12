@@ -1,15 +1,20 @@
 import './App.css';
-import Todo from './components/Todo';
-import Header from './components/Header'
+import { Route, Routes } from 'react-router-dom';
+import FavoritesPage from './pages/Favorites';
+import ProductsPage from './pages/Products';
+import NewProductPage from "./pages/NewProduct";
+import MainNavigation from './components/layout/navigation';
 
 
 function App() {
   return (
-    <div className="container">
-      <h1>Todos</h1>
-      <Todo title="First Todo" />
-      <Todo title="Seconde Todo" />
-      <Todo title="Third Todo" />
+    <div>
+      <MainNavigation />
+      <Routes>
+        <Route path="/" element={<ProductsPage />} exact />
+        <Route path="/favorites" element={<FavoritesPage />} />
+        <Route path="/new-meetup" element={<NewProductPage />} />
+      </Routes>
     </div>
   );
 }
