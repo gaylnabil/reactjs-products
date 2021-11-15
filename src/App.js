@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css'
 import { Route, Routes } from 'react-router-dom';
 import FavoritesPage from './pages/Favorites';
 import ProductsPage from './pages/Products';
@@ -13,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ProductsPage />} exact />
         <Route path="/favorites" element={<FavoritesPage />} />
-        <Route path="/new-meetup" element={<NewProductPage />} />
+        <Route path="/new-product" element={<NewProductPage />} />
       </Routes>
     </div>
   );

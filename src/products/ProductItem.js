@@ -4,15 +4,18 @@ import { Button, Card } from "react-bootstrap";
 
 const ProductItem = ({ product }) => {
   return (
-    <Card style={{ width: '20rem', 'padding': '5px' }}>
-    <Card.Img variant="top" src={'./images/' + product.image} alt={product.title} rounded  />
-    <Card.Body>
+    <Card className="card-product" key={product.id} >
+      <Card.Img
+        variant="top"
+        src={"./images/" + product.image + ".jpg"}
+        alt={product.title}
+        rounded="true"
+      />
+      <Card.Body>
         <Card.Title>{product.title}</Card.Title>
-        <Card.Text>
-            {product.description}
-        </Card.Text>
+        <Card.Text>{product.description}</Card.Text>
         <Button variant="primary">to Favorites</Button>
-    </Card.Body>
+      </Card.Body>
     </Card>
   );
 };

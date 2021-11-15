@@ -1,0 +1,10 @@
+.card-product {
+    width: 20rem;
+    padding: 5px;
+    margin-bottom: 1.0em;
+    background-color: #119DFD;
+}
+
+label {
+    font-weight: 600;
+}

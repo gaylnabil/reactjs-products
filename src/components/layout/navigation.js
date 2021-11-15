@@ -20,7 +20,7 @@ const MainNavigation = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Products</Nav.Link>
-              <Nav.Link href="/new-meetup">New Product</Nav.Link>
+              <Nav.Link href="/new-product">New Product</Nav.Link>
               <Nav.Link href="/favorites">Favorites</Nav.Link>
             </Nav>
           </Navbar.Collapse>
