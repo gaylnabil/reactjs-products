@@ -66,7 +66,7 @@ const ProductForm = ({onAddProduct})=>{
               className="form-control" ref={titleInput} type="text" name="title" id="title" required />
           </div>
           <div className="form-group mt-2">
-            <label htmlFor="image">Image</label>
+            <label htmlFor="image">URL Image</label>
             <input
               className="form-control" type="text" ref={imageInput} name="image" id="image" required />
           </div>

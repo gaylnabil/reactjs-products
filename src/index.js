@@ -5,13 +5,16 @@ import { BrowserRouter} from "react-router-dom";
 
 // import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FavoritesContextProvider } from './ammo/favorites-context';
 import App from "./App";
 
 
 
 ReactDOM.render(
-  <BrowserRouter>
-      <App />
-  </BrowserRouter>,
+  <FavoritesContextProvider >
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+  </FavoritesContextProvider>,
   document.getElementById("root")
 );

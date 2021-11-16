@@ -12,9 +12,9 @@ function App() {
     <div>
       <MainNavigation />
       <Routes>
-        <Route path="/" element={<ProductsPage />} exact />
-        <Route path="/favorites" element={<FavoritesPage />} />
-        <Route path="/new-product" element={<NewProductPage />} />
+        <Route exact path="/favorites" element={<FavoritesPage />}  />
+        <Route exact path="/" element={<ProductsPage />}  />
+        <Route exact path="/new-product" element={<NewProductPage />}   />
       </Routes>
     </div>
   );
